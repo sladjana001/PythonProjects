@@ -4,7 +4,7 @@ import sys
 
 
 print("BD-Binary to Decimal, DB-Decimal to Binary. Unesite BD ili DB: ")
-s=input("BD ili DB?")
+s=input("BD ili DB? ")
 
 if s!='DB' and s!='BD':
     sys.exit(-1)
