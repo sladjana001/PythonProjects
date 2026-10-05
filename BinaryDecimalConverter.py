@@ -19,5 +19,15 @@ if s == 'DB':
         bin += str(n%2)
         n//=2  
 
-bin=str(bin)
-print("Binarni ekvivalent je: ",bin[::-1])
+    bin=str(bin)
+    print("Binarni ekvivalent je: ",bin[::-1])
+
+else:
+    bin = input("Unesite binarni broj: ")
+    i = int(0)
+    dec = int(0)
+    while int(bin) > 0:
+        dec += (int(bin)%10)*pow(2,i)
+        i+=1
+        bin = int(bin)//10
+    print("Decimalni oblik broja je: ",dec)
